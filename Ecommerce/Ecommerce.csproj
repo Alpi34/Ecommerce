@@ -167,19 +167,57 @@
     <Content Include="Areas\Management\Views\Template\product.html" />
     <Content Include="Areas\Management\Views\Template\signup.html" />
     <Content Include="Areas\Management\Views\Template\typography.html" />
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Site.css" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-theme.min.css.map" />
+    <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Areas\Management\Views\Category\Create.cshtml" />
+    <Content Include="Areas\Management\Views\Category\Edit.cshtml" />
+    <Content Include="Areas\Management\Views\Category\Delete.cshtml" />
+    <Content Include="Areas\Management\Views\Brand\Create.cshtml" />
+    <Content Include="Areas\Management\Views\Brand\Index.cshtml" />
+    <None Include="Scripts\jquery-3.3.1.intellisense.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\jquery-3.3.1.js" />
+    <Content Include="Scripts\jquery-3.3.1.min.js" />
+    <Content Include="Scripts\jquery-3.3.1.slim.js" />
+    <Content Include="Scripts\jquery-3.3.1.slim.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\modernizr-2.8.3.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Areas\Management\Controllers\BrandController.cs" />
+    <Compile Include="Areas\Management\Controllers\CategoryController.cs" />
     <Compile Include="Areas\Management\Models\Context\ApplicationDbContext.cs" />
     <Compile Include="Areas\Management\ManagementAreaRegistration.cs" />
     <Compile Include="Areas\Management\Models\Entities\Brand.cs" />
+    <Compile Include="Areas\Management\Models\Entities\Model.cs" />
+    <Compile Include="Areas\Management\Models\Entities\Product.cs" />
     <Compile Include="Areas\Management\Models\Interface\BaseEntitiy.cs" />
     <Compile Include="Areas\Management\Models\Entities\Category.cs" />
     <Compile Include="Areas\Management\Models\Interface\IRepository.cs" />
     <Compile Include="Areas\Management\Models\Repository\BrandRepository.cs" />
     <Compile Include="Areas\Management\Models\Repository\CategoryRepository.cs" />
+    <Compile Include="Areas\Management\Models\Repository\ModelRepository.cs" />
+    <Compile Include="Areas\Management\Models\Repository\ProductRepository.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -199,7 +237,12 @@
     <Content Include="Areas\Management\Assets\fonts\glyphicons-halflings-regular.woff" />
     <Content Include="Areas\Management\Assets\fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="Areas\Management\Views\Shared\Layout.cshtml" />
+    <Content Include="Areas\Management\Views\_ViewStart.cshtml" />
+    <Content Include="Areas\Management\Views\Shared\_Layout.cshtml" />
+    <Content Include="Areas\Management\Views\Category\Index.cshtml" />
     <None Include="packages.config" />
+    <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
+    <Content Include="Scripts\jquery-3.3.1.min.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -209,7 +252,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Areas\Management\Controllers\" />
     <Folder Include="Controllers\" />
     <Folder Include="Models\" />
   </ItemGroup>

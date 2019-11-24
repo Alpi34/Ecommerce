@@ -2388,7 +2388,7 @@ ul.nav.tabs li a span {
     margin-bottom: 1em;
     font-family: 'Carrois Gothic', sans-serif;
 }
-.compose-right input[type="submit"] {
+.compose-right input[type="submit"], .compose-right a {
     font-size: 0.9em;
     background-color: #68AE00;
     border:none;
@@ -2397,15 +2397,33 @@ ul.nav.tabs li a span {
     margin-top: 1em;
         outline: none;
 }
-.compose-right input[type="submit"]:hover {
-	background-color: #FC8213;
-	transition: 0.5s all;
-  -webkit-transition: 0.5s all;
-  -moz-transition: 0.5s all;
-  -o-transition: 0.5s all;
-}
+    .compose-right input[type="submit"]:hover {
+        background-color: #FC8213;
+        transition: 0.5s all;
+        -webkit-transition: 0.5s all;
+        -moz-transition: 0.5s all;
+        -o-transition: 0.5s all;
+    }
+    .compose-right a:hover {
+        background-color: #FC8213;
+        transition: 0.5s all;
+        -webkit-transition: 0.5s all;
+        -moz-transition: 0.5s all;
+        -o-transition: 0.5s all;
+    }
 .compose-right {
     padding: 0px;
+}
+
+.compose a {
+    font-size:0.8em;
+    background-color:#FC8213;
+    border:1px solid #da1d1d;
+    color:#fff;
+    padding:0.5em;
+    margin-top:1em;
+    outline:none;
+
 }
 /*--inbox details--*/
 /*--product start here--*/

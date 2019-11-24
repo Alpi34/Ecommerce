@@ -18,6 +18,7 @@ namespace Ecommerce.Areas.Management
                 "Management_default",
                 "Management/{controller}/{action}/{id}",
                 new { action = "Index", id = UrlParameter.Optional }
+                
             );
         }
     }
