@@ -1,0 +1,50 @@
+﻿@model Ecommerce.Areas.Management.Models.Entities.Model
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Areas/Management/Views/Shared/Layout.cshtml";
+}
+
+    <div class="col-md-8 compose-right">
+        <div class="inbox-details-default">
+
+
+            <div class="inbox-details-body">
+                <div class="alert alert-info">
+                    Model Silme Formu
+                </div>
+                <dl class="dl-horizontal">
+                    <dt>
+                        @Html.DisplayNameFor(model => model.brand.Name)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.brand.Name)
+                    </dd>
+
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Name)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.Name)
+                    </dd>
+
+                </dl>
+
+                @using (Html.BeginForm())
+                {
+                    @Html.AntiForgeryToken()
+
+                    <div class="form-actions no-color">
+                        <input type="submit" value="Sil" />
+                        @Html.ActionLink("Geri Dön", "Index")
+                    </div>
+                    <div class="clearfix"></div>
+                   
+                    <h4>Silmek istediğinizden emin misiniz?</h4>
+                }
+            </div>
+        </div>
+    </div>
+

@@ -1,4 +1,4 @@
-﻿@model Ecommerce.Areas.Management.Models.Entities.Category
+﻿@model Ecommerce.Areas.Management.Models.Entities.Brand
 
 @{
     ViewBag.Title = "Delete";
@@ -11,11 +11,9 @@
 
         <div class="inbox-details-body">
             <div class="alert alert-info">
-                Kategori Silme Formu
+                Marka Silme Formu
             </div>
-
             <dl class="dl-horizontal">
-
                 <dt>
                     @Html.DisplayNameFor(model => model.Name)
                 </dt>
@@ -23,14 +21,6 @@
                 <dd>
                     @Html.DisplayFor(model => model.Name)
                 </dd>
-                <dt>
-                    @Html.DisplayNameFor(model => model.Description)
-                </dt>
-
-                <dd>
-                    @Html.DisplayFor(model => model.Description)
-                </dd>
-
 
             </dl>
 
@@ -45,9 +35,10 @@
                 @Html.ActionLink("Geri Dön", "Index")
             </div>
             <div class="clearfix"></div>
-            </div>
-            }
         </div>
+                }
+            
+            </div>
         </div>
     </div>
-
+    

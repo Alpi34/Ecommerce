@@ -1,27 +1,29 @@
-﻿@model Ecommerce.Areas.Management.Models.Entities.Category
+﻿@model Ecommerce.Areas.Management.Models.Entities.Brand
 
 @{
-    ViewBag.Title = "Create";
+    ViewBag.Title = "Edit";
     Layout = "~/Areas/Management/Views/Shared/Layout.cshtml";
 }
+
     <div class="col-md-8 compose-right">
         <div class="inbox-details-default">
 
 
             <div class="inbox-details-body">
                 <div class="alert alert-info">
-                    Kategori Ekleme Formu
+                    Marka Düzetlme Formu
                 </div>
 
 
                 @using (Html.BeginForm())
                 {
                     @Html.AntiForgeryToken()
-                   
-                    <div class="form-horizontal">
 
-                        <hr />
+                    <div class="form-horizontal">
+                        
                         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                        @Html.HiddenFor(model => model.Id)
+
                         <div class="form-group">
                             @Html.LabelFor(model => model.Name, htmlAttributes: new { @class = "control-label col-md-2" })
                             <div class="col-md-10">
@@ -30,33 +32,17 @@
                             </div>
                         </div>
 
-
-                        <div class="form-group">
-                            @Html.LabelFor(model => model.Description, htmlAttributes: new { @class = "control-label col-md-2" })
-                            <div class="col-md-10">
-                                @Html.EditorFor(model => model.Description, new { htmlAttributes = new { @class = "form-control" } })
-                                @Html.ValidationMessageFor(model => model.Description, "", new { @class = "text-danger" })
-                            </div>
-                        </div>
-
-
-
                         <div class="form-group">
                             <div class="col-md-offset-2 col-md-10">
-                                <input type="submit" value="Kaydet" />
+                                <input type="submit" value="Değiştir"  />
                                 @Html.ActionLink("Geri Dön", "Index")
                             </div>
                         </div>
                     </div>
                 }
 
-                
-                    
-                
             </div>
         </div>
     </div>
 
-            <script src="~/Scripts/jquery-3.3.1.min.js"></script>
-            <script src="~/Scripts/jquery.validate.min.js"></script>
-            <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+             

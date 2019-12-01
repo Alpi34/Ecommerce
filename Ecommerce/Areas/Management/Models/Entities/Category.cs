@@ -13,5 +13,6 @@ namespace Ecommerce.Areas.Management.Models.Entities
         public int parentID { get; set; }
         [Display(Name = "Açıklama")]
         public string Description{ get; set; }
+        public virtual ICollection<Product> Product { get; set; }
     }
 }
